@@ -1,0 +1,67 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.16.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  8.11.2
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/cb/Desktop/test/miniprogram/packages/toolbar-for-miniprogram/package.json: Unexpected string in JSON at position 917
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.16.0/libexec/lib/cli.js:315:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "toolbar-for-miniprogram",
+    "version": "1.0.0",
+    "description": "toolbar for wechat miniprogram",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "build": "node ./scripts/build.js"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.0.0",
+      "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+      "@babel/preset-env": "^7.0.0",
+      "babel-core": "7.0.0-bridge.0",
+      "babel-eslint": "^9.0.0",
+      "eslint": "^5.9.0",
+      "eslint-config-react-app": "3.0.6",
+      "eslint-plugin-flowtype": "^2.50.3",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-jsx-a11y": "^6.1.2",
+      "eslint-plugin-react": "^7.11.1",
+      "rimraf": "^2.6.2",
+      "rollup": "1.0.1",
+      "rollup-plugin-babel": "4.2.0",
+      "rollup-plugin-node-resolve": "4.0.0",
+      "rollup-plugin-replace": "2.1.0",
+      "rollup-plugin-terser": "4.0.1",
+      "fs-extra": "7.0.0"
+    }
+    "keywords": [
+      "toolbar",
+      "miniprogram"
+    ],
+    "author": "tianliang (2511458521@qq.com)",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
