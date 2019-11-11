@@ -25,7 +25,6 @@ Component({
     }
   },
   lifetimes: {
-    created() {},
     attached() {
       const { mountedInstances } = miniprogramBar;
       const webviewId = this.__wxWebviewId__;
