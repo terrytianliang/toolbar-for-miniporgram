@@ -25,25 +25,19 @@ Component({
     }
   },
   lifetimes: {
-    created() {
-      console.log("created");
-    },
+    created() {},
     attached() {
-      console.log("attached");
-      const { defAttrs, mountedInstances } = miniprogramBar;
+      const { mountedInstances } = miniprogramBar;
       const webviewId = this.__wxWebviewId__;
       if (!mountedInstances[webviewId]) {
         mountedInstances[webviewId] = this;
       }
     },
     ready() {
-      console.log("ready");
-
       this.componentReady = true;
       this.emitChange();
     },
     detached() {
-      console.log("detached");
       const webviewId = this.__wxWebviewId__;
       const { mountedInstances } = miniprogramBar;
       if (mountedInstances[webviewId]) {
@@ -54,8 +48,6 @@ Component({
   },
   methods: {
     propChange() {
-      console.log("propChange");
-
       if (this.componentReady) {
         this.emitChange();
       }
@@ -64,7 +56,6 @@ Component({
       const attrs = this.getMountedAttrs();
 
       const { title, navbarColor, bgColor, backgroundTextStyle } = attrs;
-      console.log("title", backgroundTextStyle);
 
       const navcolors = (navbarColor + "").split(" ");
       const navigationBarBackgroundColor = navcolors[0] || "";
