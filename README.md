@@ -1,2 +1,2 @@
-# toolbar-for-miniporgram
+# toolbar-for-miniprogram
 toolbar for miniprogram wechat
