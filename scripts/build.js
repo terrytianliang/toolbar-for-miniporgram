@@ -29,11 +29,3 @@ cp.execSync("rollup -c", { stdio: "inherit" });
 cp.execSync("rollup -c -i src/provider.js -o miniprogram_dist/provider.js", {
   stdio: "inherit"
 });
-
-fs.copySync(
-  paths.appDist,
-  "../test-weapp/miniprogram_npm/toolbar-for-miniprogram",
-  {
-    dereference: true
-  }
-);

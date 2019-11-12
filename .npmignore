@@ -1,0 +1,5 @@
+# .npmignore 
+config
+scripts
+src
+rollup.config.js
